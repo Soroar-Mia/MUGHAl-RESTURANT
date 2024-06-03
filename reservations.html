@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdownButton = document.getElementById('dropdownButton');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownButton.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="">
+        <nav class="bg-green-600 text-white px-6 py-2 md:flex lg:flex md:justify-between lg:justify-between">
+            <div class="flex space-x-4 justify-center items-center content-center justify-items-center">
+                <img src="./images/mughal logo.jpeg" width="100px" class="nav-logo" alt="" srcset="">
+                <h3 class="text-3xl font-bold">MUGHAL RESTAURANT</h3>
+            </div>
+            <div>
+                <h1 class="text-3xl font-bold text-center">Reserve a Table</h1>
+                <div class="mt-2">
+                    <ul class="flex space-x-4">
+                        <li><a href="index.html" class="hover:underline hover:text-orange-600">Home</a></li>
+                        <li>
+                            <div class="block">
+                                <div class="ml-4 flex items-center md:ml-6">
+                                    <div class="relative">
+                                        <button id="dropdownButton"
+                                            class="flex items-center text-white hover:underline hover:text-orange-600">
+                                            <span>Menu</span>
+                                            <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                        <div id="dropdownMenu"
+                                            class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-20">
+                                            <a href="menu.html"
+                                                class="block px-4 py-2 text-gray-800 hover:bg-green-600  hover:text-white">Appetizers</a>
+                                            <a href="menu.html"
+                                                class="block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white">Main
+                                                Courses</a>
+                                            <a href="menu.html"
+                                                class="block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white">Desserts</a>
+                                            <a href="menu.html"
+                                                class="block px-4 py-2 text-gray-800 hover:bg-green-600 hover:text-white">Beverages</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="reservations.html" class="hover:underline hover:text-orange-600">Reservations</a>
+                        </li>
+                        <li><a href="contact.html" class="hover:underline hover:text-orange-600">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main class="p-4">
+        <section class="bg-white p-4 rounded shadow-md">
+            <h2 class="text-2xl font-semibold mb-2">Reservation Form</h2>
+            <form action="#" method="post" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 p-2 border border-gray-300 rounded w-full"
+                        required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-2 border border-gray-300 rounded w-full"
+                        required>
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 p-2 border border-gray-300 rounded w-full"
+                        required>
+                </div>
+                <div>
+                    <label for="date" class="block text-sm font-medium">Date</label>
+                    <input type="date" id="date" name="date" class="mt-1 p-2 border border-gray-300 rounded w-full"
+                        required>
+                </div>
+                <div>
+                    <label for="time" class="block text-sm font-medium">Time</label>
+                    <input type="time" id="time" name="time" class="mt-1 p-2 border border-gray-300 rounded w-full"
+                        required>
+                </div>
+                <div>
+                    <label for="guests" class="block text-sm font-medium">Number of Guests</label>
+                    <input type="number" id="guests" name="guests"
+                        class="mt-1 p-2 border border-gray-300 rounded w-full" required>
+                </div>
+                <div>
+                    <label for="requests" class="block text-sm font-medium">Special Requests</label>
+                    <textarea id="requests" name="requests"
+                        class="mt-1 p-2 border border-gray-300 rounded w-full"></textarea>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="bg-green-600 text-white p-2 rounded hover:bg-green-700">Reserve</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-green-600 text-white p-6">
+        <div class="md:flex lg:flex md:justify-between lg:justify-between">
+            <div>
+                <img src="./images/mughal logo.jpeg" width="100px" class="nav-logo" alt="" srcset="">
+            </div>
+            <div class="mt-2">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                    <li><a href="reservations.html" class="hover:underline">Reservations</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+                <p class="text-center">---------- O ---------</p>
+                <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+            </div>
+            <div>
+                <p>Address: Rajbari, Bangladesh</p>
+                <p>Phone: (+880) 1933-705-154 </p>
+                <p>Email: mughal@restaurant.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

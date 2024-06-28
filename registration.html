@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="./css/registration.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdownButton = document.getElementById('dropdownButton');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownButton.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="bg-white text-black  px-6 py-2 md:flex lg:flex md:justify-between lg:justify-between">
+        <div class="flex space-x-4 justify-center items-center content-center justify-items-center">
+            <img src="./images/mughal logo.jpeg" width="100px" class="nav-logo" alt="" srcset="">
+            <h3 class="text-3xl font-bold hover:text-orange-600">MUGHAL RESTAURANT</h3>
+        </div>
+        <div>
+            <h1 class="text-3xl font-bold">Welcome to Our Restaurant</h1>
+            <div class="mt-2">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline hover:text-orange-600">Home</a></li>
+                    <li><a href="menu.html" class="hover:underline hover:text-orange-600">Menu</a></li>
+                    <li><a href="reservations.html" class="hover:underline hover:text-orange-600">Reservations</a>
+                    </li>
+                    <li><a href="contact.html" class="hover:underline hover:text-orange-600">Contact</a></li>
+                    <li><a href="registration.html" class="hover:underline hover:text-orange-600">Login</a>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <div class="ml-4 flex items-center md:ml-6">
+                                <div class="relative">
+                                    <button id="dropdownButton"
+                                        class="flex items-center text-black hover:underline hover:text-orange-600">
+                                        <img src="./images/user.png" width="40px" class="nav-user-img" alt="">
+
+                                    </button>
+                                    <div id="dropdownMenu"
+                                        class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-20">
+                                        <a href="profile.html"
+                                            class="block px-4 py-2 text-gray-800 hover:text-orange-600  ">Profile</a>
+                                        <a href="about.html"
+                                            class="block px-4 py-2 text-gray-800 hover:text-orange-600 ">About</a>
+                                        <a href="menu.html"
+                                            class="block px-4 py-2 text-gray-800 hover:text-orange-600 ">Bloge</a>
+                                        <a href="registration.html"
+                                            class="block px-4 py-2 text-gray-800 hover:text-orange-600 ">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---------------- Registration form ------------------>
+
+    <div class="flex flex-wrap justify-center">
+        <div class="w-full md:w-1/2 p-5">
+            <h1 class="text-3xl font-bold mt-5">Please Registration</h1>
+            <form onsubmit="handleRegistration(event)">
+                <p id="error" class="text-red-600"></p>
+                <input id="username" type="text" class="input border border-gray-300 p-2 rounded w-full mt-2"
+                    placeholder="Username" required />
+                <input id="first_name" type="text" class="input border border-gray-300 p-2 rounded w-full mt-2"
+                    placeholder="First Name" required />
+                <input id="last_name" type="text" class="input border border-gray-300 p-2 rounded w-full mt-2"
+                    placeholder="Last Name" required />
+                <input id="email" type="email" class="input border border-gray-300 p-2 rounded w-full mt-2"
+                    placeholder="Email" required />
+                <input id="password" type="password" class="input border border-gray-300 p-2 rounded w-full mt-2"
+                    placeholder="Password" required />
+                <input id="confirm_password" type="password"
+                    class="input border border-gray-300 p-2 rounded w-full mt-2" placeholder="Confirm Password"
+                    required />
+                <input type="submit" class="submit-btn bg-blue-500 text-white p-2 rounded mt-4 w-full"
+                    value="Register" />
+            </form>
+            <p class="mt-4">
+                <a href="login.html" class="hover:underline">Go to Login Page ->></a>
+            </p>
+        </div>
+    </div>
+
+
+    <!------------- Footer --------------->
+
+    <progress class="progress  bg-white border-b-2 border-black"></progress>
+    <footer class="bg-white text-black p-6">
+        <div class="md:flex lg:flex md:justify-between lg:justify-between">
+            <div class="flex space-x-4 justify-center items-center content-center justify-items-center">
+                <img src="./images/mughal logo.jpeg" width="100px" class="nav-logo" alt="" srcset="">
+                <h3 class="text-2xl font-bold hover:text-orange-600">MUGHAL</h3>
+            </div>
+            <div class="mt-2">
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline hover:text-orange-600">Home</a></li>
+                    <li><a href="menu.html" class="hover:underline hover:text-orange-600">Menu</a></li>
+                    <li><a href="reservations.html" class="hover:underline hover:text-orange-600">Reservations</a></li>
+                    <li><a href="contact.html" class="hover:underline hover:text-orange-600">Contact</a></li>
+                </ul>
+                <p class="text-center">---------- O ---------</p>
+                <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+            </div>
+            <div>
+                <p>Address: Rajbari, Bangladesh</p>
+                <p>Phone: (+880) 1933-705-154 </p>
+                <p>Email: mughal@restaurant.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/registration.js"></script>
+</body>
+
+</html>

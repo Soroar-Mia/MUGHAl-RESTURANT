@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-5">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex items-center space-x-4">
+                <img id="profile-picture" class="w-24 h-24 rounded-full" src="https://via.placeholder.com/150"
+                    alt="User Profile Picture">
+                <div>
+                    <h2 id="user-name" class="text-2xl font-bold text-gray-800">John Doe</h2>
+                    <p id="user-email" class="text-gray-600">johndoe@example.com</p>
+                    <button onclick="editProfile()" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg">Edit
+                        Profile</button>
+                </div>
+            </div>
+            <div class="mt-6">
+                <div class="flex space-x-4 border-b-2 mb-4">
+                    <button id="reviews-tab"
+                        class="py-2 px-4 text-gray-600 border-b-4 border-transparent hover:border-blue-500"
+                        onclick="showSection('reviews')">Reviews</button>
+                    <button id="favorites-tab"
+                        class="py-2 px-4 text-gray-600 border-b-4 border-transparent hover:border-blue-500"
+                        onclick="showSection('favorites')">Favorites</button>
+                </div>
+                <div id="reviews-section" class="hidden">
+                    <h3 class="text-xl font-semibold mb-2">Reviews</h3>
+                    <p>No reviews yet.</p>
+                </div>
+                <div id="favorites-section" class="hidden">
+                    <h3 class="text-xl font-semibold mb-2">Favorites</h3>
+                    <p>No favorites yet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/profile.js"></script>
+</body>
+
+</html>

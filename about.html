@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-5">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">About Us</h1>
+            <div class="flex flex-col md:flex-row md:space-x-8">
+                <img class="w-full md:w-1/2 rounded-lg mb-4 md:mb-0" src="https://via.placeholder.com/600x400"
+                    alt="Restaurant Image">
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-2">Our Story</h2>
+                    <p class="text-gray-600 mb-4">
+                        Welcome to our restaurant! We started our journey in 2005 with the aim of providing delicious,
+                        high-quality meals to our community. Our chefs use only the freshest ingredients to create a
+                        diverse menu that offers something for everyone.
+                    </p>
+                    <h2 class="text-2xl font-semibold text-gray-700 mb-2">Mission & Vision</h2>
+                    <p class="text-gray-600 mb-4">
+                        Our mission is to deliver an exceptional dining experience that exceeds our customers'
+                        expectations. We envision a place where people can gather to enjoy great food, excellent
+                        service, and a warm, welcoming atmosphere.
+                    </p>
+                    <button onclick="showMoreInfo()" class="px-4 py-2 bg-blue-500 text-white rounded-lg">Learn
+                        More</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="more-info" class="hidden mt-6 bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-2">Our Values</h2>
+            <p class="text-gray-600 mb-4">
+                We believe in sustainability, community support, and providing excellent service. Our team is dedicated
+                to making sure that every guest has a memorable dining experience.
+            </p>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-2">Contact Us</h2>
+            <p class="text-gray-600 mb-4">
+                Have any questions or feedback? Feel free to reach out to us! You can contact us at (123) 456-7890 or
+                email us at info@restaurant.com. We look forward to hearing from you.
+            </p>
+        </div>
+    </div>
+
+    <script src="about.js"></script>
+</body>
+
+</html>

@@ -77,22 +77,15 @@
     </nav>
 
     <!---------------- Registration form ------------------>
-
     <div class="flex flex-wrap justify-center">
         <div class="w-full md:w-1/2 p-5">
             <h1 class="text-3xl font-bold mt-5">Please Login</h1>
             <form onsubmit="handleLogin(event)">
                 <p id="error" class="text-red-600"></p>
-                <div class="mt-2">
-                    <label for="login-username" class="block text-gray-700">Username</label>
-                    <input id="login-username" type="text" class="input border border-gray-300 p-2 rounded w-full"
-                        placeholder="Username" required />
-                </div>
-                <div class="mt-2">
-                    <label for="login-password" class="block text-gray-700">Password</label>
-                    <input id="login-password" type="password" class="input border border-gray-300 p-2 rounded w-full"
-                        placeholder="Password" required />
-                </div>
+                <input id="email" type="email" class="input border border-gray-300 p-2 rounded w-full mt-2"
+                    placeholder="Email" required />
+                <input id="password" type="password" class="input border border-gray-300 p-2 rounded w-full mt-2"
+                    placeholder="Password" required />
                 <input type="submit" class="submit-btn bg-blue-500 text-white p-2 rounded mt-4 w-full" value="Login" />
             </form>
             <p class="mt-4">
@@ -100,6 +93,9 @@
             </p>
         </div>
     </div>
+
+
+
 
 
 
@@ -129,46 +125,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function handleLogin(event) {
-            event.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const errorElement = document.getElementById('error');
-
-            // Simple client-side validation
-            if (username === "" || password === "") {
-                errorElement.textContent = "Both fields are required.";
-                return;
-            }
-
-            // Clear previous error message
-            errorElement.textContent = "";
-
-            // Perform the login logic (this is just a placeholder, adapt as needed)
-            fetch('login-handler.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ username, password })
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        window.location.href = "dashboard.html"; // Redirect to dashboard on success
-                    } else {
-                        errorElement.textContent = "Invalid username or password.";
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    errorElement.textContent = "An error occurred. Please try again.";
-                });
-        }
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
         defer></script>
     <script src="https://cdn.tailwindcss.com"></script>

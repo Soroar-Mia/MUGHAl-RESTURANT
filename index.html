@@ -7,6 +7,7 @@
     <title>MUGHAL RESTAURANT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/banner.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
         crossorigin="anonymous">
@@ -28,13 +29,25 @@
     </script>
 </head>
 
-<body class="bg-white text-gray-800 px-4 c-index-body">
+<body class="  ">
     <header class="">
         <!-------------- Navbar ---------------->
-        <nav class="bg-white text-black  px-6 py-2 md:flex lg:flex md:justify-between lg:justify-between">
+        <nav class="bg-black text-white border-b-2 px-6 py-2 md:flex lg:flex md:justify-between lg:justify-between">
             <div class="flex space-x-4 justify-center items-center content-center justify-items-center">
                 <img src="./images/mughal logo.jpeg" width="100px" class="nav-logo" alt="" srcset="">
-                <h3 class="text-3xl font-bold hover:text-orange-600">MUGHAL RESTAURANT</h3>
+                <h3 class="text-3xl font-bold hover:text-red-700">
+                    <div class="animation">
+                        <div class="first">
+                            <div>MUGHAL RESTAURANT</div>
+                        </div>
+                        <div class="second">
+                            <div>MUGHAL RESTAURANT</div>
+                        </div>
+                        <div class="third">
+                            <div>MUGHAL RESTAURANT</div>
+                        </div>
+                    </div>
+                </h3>
             </div>
             <div>
                 <h1 class="text-3xl font-bold">Welcome to Our Restaurant</h1>
@@ -76,54 +89,93 @@
             </div>
         </nav>
 
-        <div class="">
-            <img src="./images/mugal banner.jpg" alt="">
+
+        <div class="relative w-full h-screen">
+            <div class="contain">
+                <video autoplay loop muted playsinline class="background-clip object-cover">
+                    <source src="./images/vdo1 (1).webm" type="video/webm">
+                </video>
+                <div class="flex justify-center items-center absolute inset-0">
+                    <div class="flex justify-center items-center pt-14">
+                        <h1
+                            class="text-3xl md:text-3xl lg:text-4xl text-white w-9/12 text-center hover:text-5xl font-bold transition-all duration-300">
+                            Indulge in the rich, aromatic flavors of authentic Mughal cuisine, expertly crafted by our
+                            passionate
+                            chefs for a dining experience fit for royalty.
+                        </h1>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </header>
 
 
-    <main class="p-4">
+    <main class="">
 
-        <div class="mx-auto bg-base-100  my-20" style="width: 90%; ">
-            <div class="my-16">
-                <h1 class="text-center text-5xl  font-sans">Our Vision & Mission</h1>
-                <p class="text-center text-xl my-2 font-sans">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.<br>
-                    Erat aliquam amet, cursus tellus non consequat laoreet eget
-                    ornare.</p>
+        <div class="mx-auto  bg-gradient-to-r from-slate-900 to-slate-700 ">
+            <div class="p-10">
+                <h1 class="text-center text-4xl text-white hover:text-red-500 hover:text-5xl  font-bold ">
+                    <div class="animation">
+                        <div class="first">
+                            <div>Our Vision & Mission</div>
+                        </div>
+                        <div class="second">
+                            <div>Our Vision & Mission</div>
+                        </div>
+                        <div class="third">
+                            <div>Our Vision & Mission</div>
+                        </div>
+                    </div>
+                </h1>
+                <div class="flex justify-center">
+                    <p class="text-center text-white lg:w-6/12 text-xl my-2 hover:text-red-500 hover:text-xl">To provide
+                        an
+                        unforgettable Mughal
+                        dining
+                        experience by
+                        serving authentic, high-quality cuisine that blends tradition
+                        with innovation, ensuring customer satisfaction and global recognition.
+                    </p>
+
+                </div>
             </div>
             <div class="card lg:card-side ">
 
                 <div class="card-body">
-                    <div>
-                        <div class="card card-side bg-base-100 rounded-none w-74">
-                            <figure class=""><img src="./images/image 53.jpg" alt="Movie" /></figure>
+                    <div class="">
+                        <div class="card card-side bg-base-100 rounded-full shadow-xl ">
+                            <figure><img class="w-full h-full object-cover" src="./images/image 53.jpg" alt="Movie" />
+                            </figure>
                             <div class="card-body p-4">
-                                <h2 class="card-title text-base">Delicious Cuisine</h2>
+                                <h2 class="card-title text-xl text-base">Delicious Cuisine</h2>
                                 <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit trat aliquam
                                     amet.</p>
                             </div>
                         </div>
-                        <div class="card card-side bg-base-100 rounded-none w-74 my-3">
-                            <figure class=""><img src="./images/image 54.jpg" alt="Movie" /></figure>
+                        <div class="card card-side bg-base-100 rounded-full  my-3">
+                            <figure class=""><img class="w-full h-full object-cover" src="./images/image 54.jpg"
+                                    alt="Movie" /></figure>
                             <div class="card-body p-4">
-                                <h2 class="card-title text-base">Fast Delivery</h2>
+                                <h2 class="card-title text-base text-xl">Fast Delivery</h2>
                                 <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit trat aliquam
                                     amet.</p>
                             </div>
                         </div>
-                        <div class="card card-side bg-base-100 rounded-none w-74 my-3">
-                            <figure class=""><img src="./images/image 54.jpg" alt="Movie" /></figure>
+                        <div class="card card-side bg-base-100 rounded-full  my-3">
+                            <figure class=""><img class="w-full h-full object-cover" src="./images/image 54.jpg"
+                                    alt="Movie" /></figure>
                             <div class="card-body p-4">
-                                <h2 class="card-title text-base">Fast Delivery</h2>
+                                <h2 class="card-title text-base text-xl">Fast Delivery</h2>
                                 <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit trat aliquam
                                     amet.</p>
                             </div>
                         </div>
-                        <div class="card card-side bg-base-100 rounded-none w-74">
-                            <figure class=""><img src="./images/image 55.jpg" alt="Movie" /></figure>
+                        <div class="card card-side bg-base-100 rounded-full">
+                            <figure class=""><img class="w-full h-full object-cover" src="./images/image 55.jpg"
+                                    alt="Movie" /></figure>
                             <div class="card-body p-4">
-                                <h2 class="card-title text-base">Professional Chef</h2>
+                                <h2 class="card-title text-base text-xl">Professional Chef</h2>
                                 <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit trat aliquam
                                     amet.</p>
                             </div>
@@ -131,8 +183,13 @@
 
                     </div>
                 </div>
-                <div class="mr-2 py-2">
-                    <figure><img src="./images/Rectangle 38.jpg" height="80%" alt="Album" /></figure>
+                <div class="m-2 py-4 rounded-lg flex ">
+                    <video autoplay loop muted playsinline>
+                        <source src="./images/vedio2.mp4" type="video/webm">
+                    </video>
+                    <video autoplay loop muted playsinline>
+                        <source src="./images/vedio2.mp4" type="video/webm">
+                    </video>
                 </div>
             </div>
         </div>
@@ -140,393 +197,146 @@
 
 
         <!---------------- Daily Offers ------------------>
-        <div class="mx-auto bg-base-100  my-20" style="width: 90%; ">
-            <h1 class="text-center text-5xl my-12 font-sans">Our Daily Offers</h1>
-            <div class="card lg:card-side ">
-                <figure><img src="./images/Group 85.png" alt="Album" /></figure>
+        <div class="mx-auto bg-gradient-to-r from-slate-500 to-slate-200 p-6">
+            <div class="mx-auto bg-gradient-to-r from-slate-500 to-slate-200">
+                <div class="p">
+                    <h1 class="text-center  font-bold hover:text-5xl hover:text-white text-4xl ">
+                        <div class="animation">
+                            <div class="first">
+                                <div>Our Daily Offers</div>
+                            </div>
+                            <div class="second">
+                                <div>Our Daily Offers</div>
+                            </div>
+                            <div class="third">
+                                <div>Our Daily Offers</div>
+                            </div>
+                        </div>
+                    </h1>
+                    <div class="flex justify-center">
+                        <p class="text-center  lg:w-6/12 my-4 hover:text-white hover:text-xl">Enjoy a variety of
+                            specially curated Mughal
+                            dishes at exclusive discounts every
+                            day, designed to delight
+                            your taste buds
+                            and enhance your dining experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card  bg-gradient-to-r from-slate-500 to-slate-200 lg:card-side pb-6">
+                <div class=" p-6"><img class="rounded-md w-full h-full object-cover  shadow-xl"
+                        src="./images/Group 85.png" alt="Album" /></div>
                 <div class="card-body">
                     <div>
-                        <div class="card card-side bg-base-100 rounded-none w-74">
-                            <figure class=""><img src="./images/Rectangle 28.jpg" alt="Movie" /></figure>
+                        <div
+                            class="card card-side   text-white  w-74 bg-gradient-to-r from-gray-800 to-zinc-600">
+                            <figure class=""><img class="w-full h-full object-cover" src="./images/Rectangle 28.jpg"
+                                    alt="Movie" />
+                            </figure>
                             <div class="card-body p-4">
-                                <h2 class="card-title text-base">Spicy Club</h2>
+                                <h2 class="card-title text-xl font-bold text-base text-amber-500">Spicy Club</h2>
                                 <p class="text-sm">Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
                             </div>
                         </div>
-                        <div class="card card-side bg-base-100 rounded-none w-74 my-3">
-                            <figure class=""><img src="./images/Rectangle 28.jpg" alt="Movie" /></figure>
+                        <div class="card card-side mt-6  text-white  w-74 bg-gradient-to-r from-gray-800 to-zinc-600">
+                            <figure class=""><img class="w-full h-full object-cover" src="./images/Rectangle 28.jpg"
+                                    alt="Movie" />
+                            </figure>
                             <div class="card-body p-4">
-                                <h2 class="card-title text-base">Spicy Club</h2>
+                                <h2 class="card-title text-xl font-bold text-base text-amber-500">Spicy Club</h2>
                                 <p class="text-sm">Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
                             </div>
                         </div>
-                        <div class="card card-side bg-base-100 rounded-none w-74">
-                            <figure class=""><img src="./images/Rectangle 28.jpg" alt="Movie" /></figure>
+                        <div class="card card-side mt-6   text-white  w-74 bg-gradient-to-r from-gray-800 to-zinc-600">
+                            <figure class=""><img class="w-full h-full object-cover" src="./images/Rectangle 28.jpg"
+                                    alt="Movie" />
+                            </figure>
                             <div class="card-body p-4">
-                                <h2 class="card-title text-base">Spicy Club</h2>
+                                <h2 class="card-title text-xl font-bold text-base text-amber-500">Spicy Club</h2>
                                 <p class="text-sm">Pork, chcken and vegetable fried rolls served with lettuce wraps</p>
                             </div>
                         </div>
+
 
                     </div>
                 </div>
             </div>
-        </div>
 
-
-        <!-------------- our menu ------------------------->
-
-        <div class="mx-auto bg-base-100  my-20" style="width: 90%; ">
-            <div class="my-8">
-                <h1 class="text-center text-5xl font-sans ">Check out our menu</h1>
-                <h1 class="text-center  font-sans my-2">We love to serve the quality food as always. Check our
-                    foodbook below.</h1>
-            </div>
-            <div role="tablist" class="tabs my-8 mx-auto ali tabs-bordered">
-                <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Breakfast" />
-                <div role="tabpanel" class="tab-content py-10">
-                    <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
-                        <ul class="slider-container">
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (1).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class="">Egg Frittata</h3>
-                                            <p class="px-2  text-right">120tk</p>
-                                        </div>
-                                        <p class="card-text ">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (2).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Sandwiches</h3>
-                                            <p class="px-2 text-right">101tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (3).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Bars. PIN IT</h3>
-                                            <p class="px-2 text-right">150tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10.jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Sandwiches</h3>
-                                            <p class="px-2 text-right">130tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button type="button" class="slider-nav" aria-label="Go left"></button>
-                        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-                    </div>
-                </div>
-
-                <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Lunch" checked />
-                <div role="tabpanel" class="tab-content py-10">
-                    <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
-                        <ul class="slider-container">
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (1).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class="">Egg Frittata</h3>
-                                            <p class="px-2  text-right">120tk</p>
-                                        </div>
-                                        <p class="card-text ">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (2).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Sandwiches</h3>
-                                            <p class="px-2 text-right">101tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (3).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Bars. PIN IT</h3>
-                                            <p class="px-2 text-right">150tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10.jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Sandwiches</h3>
-                                            <p class="px-2 text-right">130tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button type="button" class="slider-nav" aria-label="Go left"></button>
-                        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-                    </div>
-                </div>
-
-                <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Dinner" checked />
-                <div role="tabpanel" class="tab-content py-10">
-                    <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
-                        <ul class="slider-container">
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (1).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class="">Egg Frittata</h3>
-                                            <p class="px-2  text-right">120tk</p>
-                                        </div>
-                                        <p class="card-text ">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (2).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Sandwiches</h3>
-                                            <p class="px-2 text-right">101tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (3).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Bars. PIN IT</h3>
-                                            <p class="px-2 text-right">150tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10.jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Sandwiches</h3>
-                                            <p class="px-2 text-right">130tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button type="button" class="slider-nav" aria-label="Go left"></button>
-                        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-                    </div>
-                </div>
-
-                <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Starters" />
-                <div role="tabpanel" class="tab-content py-10">
-                    <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
-                        <ul class="slider-container">
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (1).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class="">Egg Frittata</h3>
-                                            <p class="px-2  text-right">120tk</p>
-                                        </div>
-                                        <p class="card-text ">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (2).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Sandwiches</h3>
-                                            <p class="px-2 text-right">101tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10 (3).jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Bars. PIN IT</h3>
-                                            <p class="px-2 text-right">150tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card border-0">
-                                    <div class="ratio ratio-1x1">
-                                        <img src="./images/Rectangle 10.jpg" class="card-img-top" loading="lazy"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body p-0 pt-2">
-                                        <div class="flex text-xl justify-between">
-                                            <h3 class=" h5">Sandwiches</h3>
-                                            <p class="px-2 text-right">130tk</p>
-                                        </div>
-                                        <p class="card-text">Fresh toasted sourdough bread with olive oil and
-                                            pomegranate.</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <button type="button" class="slider-nav" aria-label="Go left"></button>
-                        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!------------- Visit Our Restaurant ------------->
 
-        <div class="mx-auto bg-base-100  my-20" style="width: 90%; ">
-            <h1 class="text-center text-5xl font-sans ">Visit Our Restaurant</h1>
-            <h1 class="text-center  font-sans my-2">Quality country-style menu selection, friendly and efficient
+        <div class="mx-auto bg-gradient-to-r pt-4 from-slate-300 to-gray-200 ">
+            <h1 class="text-center text-4xl pt-10 font-bold hover:text-red-500 hover:text-5xl">
+                <div class="animation">
+                    <div class="first">
+                        <div>Visit Our Restaurant</div>
+                    </div>
+                    <div class="second">
+                        <div>Visit Our Restaurant</div>
+                    </div>
+                    <div class="third">
+                        <div>Visit Our Restaurant</div>
+                    </div>
+                </div>
+            </h1>
+            <h1 class="text-center text-black hover:text-red-500 hover:text-xl mb-8">Quality country-style menu
+                selection, friendly and efficient
                 service,<br> combined with genuine value has kept Our Best
                 serving families like yours for over 28.</h1>
-            <div class="grid grid-cols-1 my-4 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 my-4 sm:grid-cols-2 lg:grid-cols-3 gap-4  ">
                 <!-- Card 1 -->
-                <div class="bg-white p-4 rounded ">
-                    <img src="./images/Group 226.jpg" alt="Image 1" class="w-full h-auto rounded">
+                <div class=" p-6 m-4 rounded bg-gradient-to-r from-gray-600 to-gray-600">
+                    <img src="./images/Group 226.jpg" alt="Image 1" class="w-full h-auto rounded ">
                 </div>
                 <!-- Card 2 -->
-                <div class="bg-white p-4 rounded ">
+                <div class=" p-6 m-4 rounded bg-gradient-to-r from-gray-600 to-gray-600">
                     <img src="./images/Group 227.jpg" alt="Image 2" class="w-full h-auto rounded">
                 </div>
                 <!-- Card 3 -->
-                <div class="bg-white p-4 rounded ">
+                <div class=" p-6 m-4 rounded bg-gradient-to-r from-gray-600 to-gray-600">
                     <img src="./images/Group 228.jpg" alt="Image 3" class="w-full h-auto rounded">
                 </div>
                 <!-- Card 4 -->
-                <div class="bg-white p-4 rounded shadow">
+                <div class=" p-6 m-4 rounded shadow bg-gradient-to-r from-gray-600 to-gray-600">
                     <img src="./images/Group 230.jpg" alt="Image 4" class="w-full h-auto rounded">
                 </div>
                 <!-- Card 5 -->
-                <div class="bg-white p-4 rounded shadow">
+                <div class=" p-6 m-4 rounded shadow bg-gradient-to-r from-gray-600 to-gray-600">
                     <img src="./images/Group 231.jpg" alt="Image 5" class="w-full h-auto rounded">
                 </div>
                 <!-- Card 6 -->
-                <div class="bg-white p-4 rounded shadow">
+                <div class=" p-6 m-4 rounded shadow bg-gradient-to-r from-gray-600 to-gray-600">
                     <img src="./images/Group 226.jpg" alt="Image 6" class="w-full h-auto rounded">
                 </div>
             </div>
         </div>
 
+
+
         <!------------- They will cook ------------->
 
         <div class="mx-auto bg-base-100  my-20" style="width: 90%; ">
             <div class="my-8">
-                <h1 class="text-center text-5xl font-sans ">They will cook for you</h1>
-                <h1 class="text-center  font-sans my-2">We love to serve the quality food as always. Check our
-                    foodbook below.</h1>
+                <h1 class="text-center text-4xl  font-bold">
+                    <div class="animation">
+                        <div class="first">
+                            <div>They will cook for you</div>
+                        </div>
+                        <div class="second">
+                            <div>They will cook for you</div>
+                        </div>
+                        <div class="third">
+                            <div>They will cook for you</div>
+                        </div>
+                    </div>
+                </h1>
+                <div id="scroll-container">
+                    <div id="scroll-text">
+                        <p>We love to serve the quality food as always. Check our
+                            foodbook below.</p>
+                    </div>
+                </div>
                 <div class="container mx-auto mt-16">
                     <div class="flex flex-wrap -mx-4">
                         <!-- Card 1 -->
@@ -561,69 +371,446 @@
             </div>
         </div>
 
+        <!-------------- our menu ------------------------->
+
+        <div class=" bg-gradient-to-r from-orange-100 to-amber-50  ">
+            <div class="py-10 bg-gradient-to-r from-orange-100 to-amber-50  ">
+                <div class="">
+                    <h1 class="text-center text-4xl  font-bold ">
+                        <div class="animation">
+                            <div class="first">
+                                <div>Check out our menu</div>
+                            </div>
+                            <div class="second">
+                                <div>Check out our menu</div>
+                            </div>
+                            <div class="third">
+                                <div>Check out our menu</div>
+                            </div>
+                        </div>
+                    </h1>
+
+                    <div id="scroll-container">
+                        <div id="scroll-text">
+                            <p>We love to serve the quality food as always. Check our
+                                foodbook below.</p>
+                        </div>
+                    </div>
+                </div>
+                <div role="tablist" class="tabs my-8 mx-auto ali tabs-bordered px-10 ">
+                    <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Breakfast" />
+                    <div role="tabpanel" class="tab-content py-10">
+                        <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
+                            <ul class="slider-container">
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (1).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class="pl-2 ">Egg Frittata</h3>
+                                                <p class="pr-4  text-right">120tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (2).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class="pl-2 ">Sandwiches</h3>
+                                                <p class="pr-4 text-right">101tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (3).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class="pl-2 ">Bars. PIN IT</h3>
+                                                <p class="pr-4 text-right">150tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1 rounded-lg">
+                                            <img src="./images/Rectangle 10.jpg"
+                                                class=" w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class="pl-2 ">Sandwiches</h3>
+                                                <p class="pr-4 text-right">130tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="slider-nav" aria-label="Go left"></button>
+                            <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Lunch" checked />
+                    <div role="tabpanel" class="tab-content py-10">
+                        <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
+                            <ul class="slider-container">
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (1).jpg"
+                                                class="w-full h-full object-coverrounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class="pl-2 ">Egg Frittata</h3>
+                                                <p class="pr-4  text-right">120tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (2).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Sandwiches</h3>
+                                                <p class="pr-4 text-right">101tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (3).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Bars. PIN IT</h3>
+                                                <p class="pr-4 text-right">150tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10.jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Sandwiches</h3>
+                                                <p class="pr-4 text-right">130tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="slider-nav" aria-label="Go left"></button>
+                            <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Dinner" checked />
+                    <div role="tabpanel" class="tab-content py-10">
+                        <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
+                            <ul class="slider-container">
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (1).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class="pl-2">Egg Frittata</h3>
+                                                <p class="pr-4  text-right">120tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (2).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Sandwiches</h3>
+                                                <p class="pr-4 text-right">101tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (3).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Bars. PIN IT</h3>
+                                                <p class="pr-4 text-right">150tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10.jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Sandwiches</h3>
+                                                <p class="pr-4 text-right">130tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="slider-nav" aria-label="Go left"></button>
+                            <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Starters" />
+                    <div role="tabpanel" class="tab-content py-10">
+                        <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
+                            <ul class="slider-container">
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (1).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class="pl-2">Egg Frittata</h3>
+                                                <p class="pr-4  text-right">120tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (2).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Sandwiches</h3>
+                                                <p class="pr-4 text-right">101tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10 (3).jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Bars. PIN IT</h3>
+                                                <p class="pr-4 text-right">150tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="card mx-2 bg-gradient-to-r from-red-500 to-red-200 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="./images/Rectangle 10.jpg"
+                                                class="w-full h-full object-cover rounded-lg" loading="lazy" alt="...">
+                                        </div>
+                                        <div class="card-body p-0 p-2">
+                                            <div class="flex text-xl justify-between font-bold">
+                                                <h3 class=" pl-2">Sandwiches</h3>
+                                                <p class="pr-4 text-right">130tk</p>
+                                            </div>
+                                            <p class="card-text pl-2">Fresh toasted sourdough bread with olive oil and
+                                                pomegranate.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="slider-nav" aria-label="Go left"></button>
+                            <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-------------  ------------->
 
-        <div class="mx-auto bg-base-100 my-20" style="width: 90%;">
-            <div class="my-8">
-                <h1 class="text-center text-5xl font-sans">Online Reservation</h1>
-                <h1 class="text-center font-sans my-2">Book your table for lunch or dinner..</h1>
-            </div>
-            <div class="hero-content text-center text-neutral-content">
-                <div class="">
-                    <form class=" p-8 ">
-                        <div class="mb-4 flex">
-                            <div class="mr-2">
-                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your
-                                    Name</label>
-                                <input type="text" id="name" name="name"
-                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    required>
+        <div class="bg-gradient-to-r from-orange-200 to-amber-100">
+            <div class=" pb-10  bg-gradient-to-r from-orange-200 to-amber-100">
+                <div class="py-10">
+                    <h1 class="text-center text-4xl hover:text-red-500 hover:text-5xl font-bold">
+                        <div class="animation">
+                            <div class="first">
+                                <div>Online Reservation</div>
                             </div>
-                            <div class="ml-2">
-                                <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone
-                                    Number</label>
-                                <input type="tel" id="phone" name="phone"
-                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    required>
+                            <div class="second">
+                                <div>Online Reservation</div>
+                            </div>
+                            <div class="third">
+                                <div>Online Reservation</div>
                             </div>
                         </div>
-                        <div class="mb-4 flex">
-                            <div class="mr-2">
-                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email
-                                    Address</label>
-                                <input type="email" id="email" name="email"
-                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    required>
-                            </div>
-                            <div class="ml-2">
-                                <label for="person" class="block text-gray-700 text-sm font-bold mb-2">Number of
-                                    Persons</label>
-                                <input type="number" id="person" name="person"
-                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    required>
+                    </h1>
+                    <h1 class="text-center hover:text-red-500 hover:text-xl my-2">Book your table for lunch or dinner..
+                    </h1>
+                </div>
+                <div class="lg:flex  justify-center">
+                    <div>
+                        <div class="hero-content text-center text-neutral-content flex justify-center">
+                            <div class="">
+                                <form class="rounded-lg mx-4 p-6 border bg-gradient-to-r from-orange-500 to-yellow-400">
+                                    <h1 class="text-center text-2xl mb-8 text-gray-700 font-bold">Book Now</h1>
+                                    <div class="mb-4 flex ">
+                                        <div class="mr-2">
+                                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your
+                                                Name</label>
+                                            <input type="text" id="name" name="name"
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                required>
+                                        </div>
+                                        <div class="ml-2">
+                                            <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone
+                                                Number</label>
+                                            <input type="tel" id="phone" name="phone"
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 flex">
+                                        <div class="mr-2">
+                                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email
+                                                Address</label>
+                                            <input type="email" id="email" name="email"
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                required>
+                                        </div>
+                                        <div class="ml-2">
+                                            <label for="person"
+                                                class="block text-gray-700 text-sm font-bold mb-2">Number of
+                                                Persons</label>
+                                            <input type="number" id="person" name="person"
+                                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 flex mb-8">
+                                        <div class="mr-2">
+                                            <label for="date"
+                                                class="block text-gray-700 text-sm font-bold mb-2">Date</label>
+                                            <input type="date" id="date" name="date"
+                                                class="shadow appearance-none border rounded w-full py-2 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                required>
+                                        </div>
+                                        <div class="ml-2">
+                                            <label for="time"
+                                                class="block text-gray-700 text-sm font-bold mb-2">Time</label>
+                                            <input type="time" id="time" name="time"
+                                                class="shadow appearance-none border rounded w-full py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-center mb-8">
+                                        <button type="submit"
+                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="mb-4 flex">
-                            <div class="mr-2">
-                                <label for="date" class="block text-gray-700 text-sm font-bold mb-2">Date</label>
-                                <input type="date" id="date" name="date"
-                                    class="shadow appearance-none border rounded w-full py-2 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    required>
-                            </div>
-                            <div class="ml-2">
-                                <label for="time" class="block text-gray-700 text-sm font-bold mb-2">Time</label>
-                                <input type="time" id="time" name="time"
-                                    class="shadow appearance-none border rounded w-full py-2 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    required>
+                    </div>
+                    <div>
+                        <div class="flex justify-center p-4 ">
+                            <div class="w-10/12">
+                                <img class="rounded-lg w-full h-full object-cover " src="./images/online.jpg" alt=""
+                                    srcset="">
                             </div>
                         </div>
-                        <div class="flex items-center justify-center">
-                            <button type="submit"
-                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                                Submit
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -632,9 +819,11 @@
 
     <!------------- Footer --------------->
 
-    <progress class="progress  bg-white border-b-2 border-black">
-    </progress>
-    <footer class="bg-white text-black p-6">
+    <div class="bg-gradient-to-r from-amber-200 to-yellow-400">
+        <progress class="progress  bg-white border-b-2 border-t-2 border-black">
+        </progress>
+    </div>
+    <footer class="bg-gradient-to-r from-indigo-700 to-pink-600 text-white p-6">
         <div class="md:flex lg:flex md:justify-between lg:justify-between">
             <div class="flex space-x-4 justify-center items-center content-center justify-items-center">
                 <img src="./images/mughal logo.jpeg" width="100px" class="nav-logo" alt="" srcset="">

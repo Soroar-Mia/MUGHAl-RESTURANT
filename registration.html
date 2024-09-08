@@ -80,15 +80,11 @@
 
     <div class="flex flex-wrap justify-center">
         <div class="w-full md:w-1/2 p-5">
-            <h1 class="text-3xl font-bold mt-5">Please Registration</h1>
-            <form onsubmit="handleRegistration(event)">
+            <h1 class="text-3xl font-bold mt-5">Please Register</h1>
+            <form id="registrationForm" onsubmit="handleRegistration(event)">
                 <p id="error" class="text-red-600"></p>
                 <input id="username" type="text" class="input border border-gray-300 p-2 rounded w-full mt-2"
                     placeholder="Username" required />
-                <input id="first_name" type="text" class="input border border-gray-300 p-2 rounded w-full mt-2"
-                    placeholder="First Name" required />
-                <input id="last_name" type="text" class="input border border-gray-300 p-2 rounded w-full mt-2"
-                    placeholder="Last Name" required />
                 <input id="email" type="email" class="input border border-gray-300 p-2 rounded w-full mt-2"
                     placeholder="Email" required />
                 <input id="password" type="password" class="input border border-gray-300 p-2 rounded w-full mt-2"
@@ -104,6 +100,8 @@
             </p>
         </div>
     </div>
+
+
 
 
     <!------------- Footer --------------->
